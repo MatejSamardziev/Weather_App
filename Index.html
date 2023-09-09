@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script defer src="Script.js"></script>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+
+    <div class="center-part">
+        <div class="search-bar">
+            <form class="search-form">
+                <input type="text" class="search" placeholder="Search for cities">
+                <button class="search-submit hidden" type="submit"></button>
+            </form>
+
+        </div>
+        <p class="search-error hidden"></p>
+        <div class="main-container">
+           <div class="city-and-image">
+               <div class="city-data">
+                   <h1>Madrid</h1>
+                   <h2>31°C</h2>
+                   <h3>chance of rain: 0%</h3>
+               </div>
+               <img class="main-image" src="sun-transparent-background-free-png.webp">
+           </div>
+
+            <div class="forecast-today-container">
+                <h3>Todays forecast</h3>
+
+                <div class="today-forecasts">
+                    <div class="today-forecast 1">
+                        <h3  class="h1">6:00 AM</h3>
+                        <img class="today-image-1 1" src="sun-transparent-background-free-png.webp">
+                        <h2 class="today-temp-1 1">31°C</h2>
+                    </div>
+
+                    <div class="today-forecast 2" index="2">
+                        <h3  class="h2">6:00 AM</h3>
+                        <img class="today-image-2" index="2" src="sun-transparent-background-free-png.webp">
+                        <h2 class="today-temp-2" index="2">31°C</h2>
+                    </div>
+
+                    <div class="today-forecast 3" index="3">
+                        <h3  class="h3">6:00 AM</h3>
+                        <img class="today-image-3" index="3" src="sun-transparent-background-free-png.webp">
+                        <h2 class="today-temp-3" index="3">31°C</h2>
+                    </div>
+
+                    <div class="today-forecast 4" index="4">
+                        <h3  class="h4">6:00 AM</h3>
+                        <img class="today-image-4" index="4" src="sun-transparent-background-free-png.webp">
+                        <h2 class="today-temp-4" index="4">31°C</h2>
+                    </div>
+
+                    <div class="today-forecast 5" index="5">
+                        <h3 class="h5">6:00 AM</h3>
+                        <img class="today-image-5" index="5" src="sun-transparent-background-free-png.webp">
+                        <h2 class="today-temp-5" index="5" >31°C</h2>
+                    </div>
+
+                    <div class="today-forecast today-forecast-last">
+                        <h3 class="h6">6:00 AM</h3>
+                        <img class="today-image-6" index="6" src="sun-transparent-background-free-png.webp">
+                        <h2 class="today-temp-6" index="6">31°C</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="air-conditions-container">
+                <h3>AIR CONDITIONS</h3>
+                <div class="air-wrapper">
+                    <div>
+                        <h3>Feels like</h3>
+                        <h1 class="feels-like-temp">30</h1>
+                    </div>
+
+                    <div>
+                        <h3>Wind</h3>
+                        <h1 class="wind">0.2 km/h</h1>
+                    </div>
+
+                    <div>
+                        <h3>Precipitation</h3>
+                        <h1 class="prec">0</h1>
+                    </div>
+
+                    <div>
+                        <h3>UV Index</h3>
+                        <h1 class="uv-index">3</h1>
+                    </div>
+                </div>
+                </div>
+
+
+        </div>
+    </div>
+
+    <div class="forecast-container">
+        <h3>3 DAY FORECAST</h3>
+
+    </div>
+
+</div>
+
+<div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <h1>There are multiple cities with the same name, select one to view</h1>
+    <div class="modal-city-container">
+
+    </div>
+
+</div>
+<div class="overlay hidden"></div>
+
+</body>
+</html>
